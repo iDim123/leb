@@ -1,0 +1,43 @@
+  <div class="tariffs__container">
+    <div ng-show="tc.isSelected(0) || tc.isSelected(1) || tc.isSelected(2)">
+      <div class="tariff" ng-repeat="tariff in tc.tariffsType(tc.tab)">
+        <div class="prices">
+          <lable>{{tariff.Name}}</lable>
+          <lable>до <span>{{tariff.SpeedUa}}</span> Мбит/с</lable>
+          <lable>до <span>{{tariff.SpeedWorld}}</span> Мбит/с</lable>
+          <lable>до <span>{{tariff.SpeedWorldNigth}}</span> Мбит/с</lable>
+          <lable><span>{{tariff.MonthCost}}</span> грн.*</lable>
+          <lable><span>{{tariff.ConnectCost}}</span> {{tariff.ConnectCostType}}</lable>
+        </div>
+        <lable class="arrow-img"></lable>
+        <button>Подключиться</button>
+      </div>
+      <div class="tariff-info__container">
+        <lable>Скорость по украинскому сегменту</lable>
+        <lable>Скорость по зарубежному сегменту </lable>
+        <lable>Скорость по зарубежному сегменту в ночное время (с 1:00 до 8:00)</lable>
+        <lable>Ежемесячная абонентская плата (с НДС)</lable>
+        <lable>Стоимость подключения (с НДС)</lable>
+      </div>
+    </div>
+    <div ng-show="tc.isSelected(3)">
+      <div class="services__main-container">
+        <div class="services__container">
+          <div class="service_name">
+            <lable ng-repeat="service in tc.res.first[0]">{{service.Name}}</lable>
+          </div>
+          <div class="service_cost">
+            <lable ng-repeat="service in tc.res.first[0]">{{service.Cost}}</lable>
+          </div>
+        </div>
+        <div class="services__container">
+          <div class="service_name">
+            <lable ng-repeat="service in tc.res.second[0]">{{service.Name}}</lable>
+          </div>
+          <div class="service_cost">
+            <lable ng-repeat="service in tc.res.second[0]">{{service.Cost}}</lable>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

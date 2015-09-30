@@ -1,0 +1,35 @@
+html{
+  height: 100%;
+}
+
+body{
+  min-width: 1170px;
+  height: 100%;
+/*  background-color: #464646;*/
+}
+
+.main__wrapper{
+  position: relative;
+  margin: 0 auto;
+  max-width: 1170px;
+  min-height: 100%;
+  
+/*  background-color: #ff6a6a;*/
+}
+.content__wrapper{
+  width: 100%;
+/*  min-height: 100%;*/
+  height: 100%;
+/*  background-color: #4eac51;*/
+}
+
+.clearing {
+  /*margin-top: 50px;*/
+  clear: both;
+  height: 100px;
+}
+
+[ng\:cloak], [ng-cloak], .ng-cloak {
+  display: none;
+}
+

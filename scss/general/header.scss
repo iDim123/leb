@@ -1,0 +1,114 @@
+#header {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 85px;
+  width: 1170px;
+  margin: 0 auto;
+  .logo {
+    float: left;
+    width: 355px;
+    height: 100%;
+    position: relative;
+    a {
+      position: absolute;
+      top: -5px;
+      left: 20px;
+      height: 100%;
+      @include logo-lg;
+    }
+  }
+  .first-line {
+    height: 35px;
+    :nth-child(1) {
+      width: 200px;
+    }
+    :nth-child(2),
+    :nth-child(3) {
+      width: 120px;
+    }
+    :nth-child(4) {
+      width: 60px;
+    }
+    > input,
+    lable {
+      padding: 0;
+      margin: 0;
+      line-height: normal;
+      vertical-align: top;
+    }
+    input[type="text"]{
+      height: 30px;
+      padding-left: 5px;
+    }
+    input[type="button"]{
+      height: 33px;
+      color: #ffffff;
+      background-color: #70b3ec;
+      border: 1px solid #70b3ec;
+    }
+    lable{
+      height: 30px;
+      color: #5888c7;
+      font-weight: 600;
+      font-size: 25px;
+    }
+    .call-img {
+      margin-left: 15px;
+      height: 30px;
+      width: 30px;
+      display: inline-block;
+      background-image: url("/images/phone-sprites.png");
+      background-position: 0px 0px;
+    }
+  }
+  .second-line {
+    height: 50px;
+    ul {
+      line-height: 50px;
+      vertical-align: top;
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+    li {
+      display: inline-block;
+      padding: 0 35px;
+      height: 100%;
+      :hover{
+        color: blue;
+        text-decoration: underline;
+      }
+    }
+    a {
+      font-family: arial;
+      font-size: 18px;
+      color: #000000;
+      text-decoration: none;
+    }
+    .active{
+      font-weight: 600;
+    }
+    .language {
+      float: right;
+      position: relative;
+      height: 100%;
+      display: inline-block;
+      padding: 0;
+      background-color: antiquewhite;
+      a {
+        position: absolute;
+        font-size: 12px;
+        font-weight: 600;
+      }
+      .ua{
+        left: 0;
+        top: 8px;
+      }
+      .ru{
+        left: 0;
+        bottom: 8px;
+      }
+    }
+  }
+}

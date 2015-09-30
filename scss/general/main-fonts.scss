@@ -1,0 +1,53 @@
+@mixin logo-lg{
+  font-family: Arial;
+  font-size: 75px;
+  color: #51A0D1;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 85px;
+  text-decoration: none;
+}
+@mixin logo-sm{
+  font-family: Arial;
+  font-size: 32px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 30px;
+  text-decoration: none;
+}
+
+$mainwidth: 1170px;
+
+body{
+  font-family: arial;
+}
+
+a {
+  outline:none !important;
+}
+
+.tab-arrow {
+    position: absolute;
+    top: -15px;
+    height: 35px;
+    width: 180px;
+    background-image: url('/images/tariff-Sprites.png');
+    background-position: 0 -14px;
+  }
+.tariff-arrow{
+    top: -43px;
+    left: 459px;
+  }
+.contacts-arrow{
+    left: 735px;
+  }
+.promo-arrow{
+    left: 325px;
+  }
+.faq-arrow{
+    left: 904px;
+  }
+.service-arrow{
+    left: 595px
+  }

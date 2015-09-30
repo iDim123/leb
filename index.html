@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+  <meta charset="UTF-8">
+  <title>LEB провайдер</title>
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
+<!--  <link rel="stylesheet" href="build/css/bootstrap.min.css">-->
+  <link rel="stylesheet" href="vendors/normalize.css">
+  <link rel="stylesheet" href="build/css/styles.min.css">
+</head>
+
+<body ng-cloak>
+  <div class="main__wrapper" ng-controller="mainCtrl">
+    <header ng-include="'templates/general/header.html'"></header>
+    <div class="content__wrapper">
+      <ng-view></ng-view>
+    </div>
+    <div class="clearing"></div>
+    <footer ng-include="'templates/general/footer.html'"></footer>
+  </div>
+
+  <script src="build/js/vendors.js"></script>
+  <script src="build/js/scripts.min.js"></script>
+</body>
+
+</html>

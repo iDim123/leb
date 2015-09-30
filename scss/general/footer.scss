@@ -1,0 +1,59 @@
+footer{
+  position: absolute;
+  bottom: 0;
+  height: 85px;
+  width: 100%;
+  background-color: #a2a2a2;
+  border-radius: 20px 20px 0 0;
+  #footer{
+    position: relative;
+  }
+  .telefons{
+    float: left;
+    color: #fff;
+    font-size: 16px;
+    margin: 6px 0 0 114px;
+    line-height: 23px;
+  }
+   .logo {
+    float: left;
+    width: 100px;
+    height: 100%;
+    position: relative;
+    a {
+      position: absolute;
+      top: 12px;
+      left: 20px;
+      height: 100%;
+      @include logo-sm;
+    }
+  }
+  hr{
+    clear: both;
+    margin: 0;
+  }
+  .company-adress{
+    color: #fff;
+    font-size: 14px;
+    margin: 8px 0 0 21px; 
+  }
+  .right-side{
+    float: right;
+    margin: 17px 10px 0 0;
+  lable{
+      color: #fff;
+      height: 30px;
+      font-weight: 600;
+      font-size: 20px;
+      vertical-align: top;
+    }
+    .call-img {
+      margin-left: 15px;
+      height: 30px;
+      width: 25px;
+      display: inline-block;
+      background-image: url("/images/phone-sprites.png");
+      background-position: 0px 26px;
+    }
+  }
+}
