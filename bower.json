@@ -5,12 +5,7 @@
     "iDma123 <magmus02@gmail.com>"
   ],
   "description": "internet provider",
-  "dependencies": {
-    "bootstrap": "~3.3.5",
-    "jquery": "~2.1.4",
-    "angular": "~1.4.3",
-    "angular-route": "~1.4.4"
-  },
+  "dependencies": {},
   "main": "index.html",
   "moduleType": [
     "node"
@@ -25,5 +20,13 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "devDependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4",
+    "angular": "~1.4.3",
+    "angular-route": "~1.4.4",
+    "angular-accordion": "ang-accordion#*",
+    "angular-animate": "~1.4.7"
+  }
 }

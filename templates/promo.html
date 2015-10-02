@@ -1,4 +1,16 @@
- <section id="promo">
+ <section id="promo" ng-controller="promoCtrl">
   <div class="tab-arrow promo-arrow"></div>
-  <div>Акции</div>
+  <div class="promo__container">
+   <div class="promo-row" ng-repeat="promo in promoList">
+    <div class="img">
+    <img ng-src={{promo.PromoImg}} alt="{{promo.PromoImg}}">
+    </div>
+    <div class="promo-info">
+    <h3>{{promo.Name}}</h3>
+    <p class="promobody">{{promo.Body}}</p>
+    <p>{{promo.Important1}}</p>
+    <p>{{promo.Important2}}</p>
+    </div>
+    </div>
+  </div>
 </section>

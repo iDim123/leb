@@ -1,3 +1,27 @@
-#promo{
+#promo {
   position: relative;
+  .promo__container {
+    padding-top: 45px;
+    .promo-row {
+      float: left;
+      width: $mainwidth / 2 - 5px;
+      .img{
+        text-align: center;
+      img {
+        border-radius: 5px;
+      }}
+    }
+    .promo-info {
+      padding: 0 20px;
+      h3 {
+        font-weight: bold;
+      }
+      .promobody {
+        text-align: justify;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      
+    }
+  }
 }

@@ -24,6 +24,11 @@ module.exports = function (grunt) {
         banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
           '<%= grunt.template.today("yyyy-mm-dd") %> */',
       },
+      buildcss:{
+        src: ['css/*.css',
+              'bower_components/bootstrap/dist/css/bootstrap.min.css'],
+        dest: 'build/css/vendors.css',
+      },
       build: {
        src: ['js/**/*.js'],
        dest: 'build/js/scripts.js',
@@ -31,7 +36,12 @@ module.exports = function (grunt) {
       vendors: {
         src: ['bower_components/angular/angular.min.js',
                 'bower_components/angular-route/angular-route.min.js',
-                'bower_components/jquery/dist/jquery.min.js'],
+                'bower_components/jquery/dist/jquery.min.js',
+                'bower_components/angular-accordion/js/ang-accordion.js',
+                'vendors/ui-bootstrap-custom-0.13.4.min.js',
+                'vendors/ui-bootstrap-custom-tpls-0.13.4.min.js',
+                'bower_components/angular-animate/angular-animate.min.js'
+             ],
         dest: 'build/js/vendors.js'
       },
       move: {
@@ -39,11 +49,13 @@ module.exports = function (grunt) {
           {
             src: ['bower_components/angularjs/angular.min.js.map'],
             dest: 'build/js/angular.min.js.map'
-          },
-          {
+          },{
             src: ['bower_components/angular-route/angular-route.min.js.map'],
             dest: 'build/js/angular-route.min.js.map'
-          },
+          },{
+            src: ['bower_components/angular-animate/angular-animate.min.js.map'],
+            dest: 'build/js/angular-animate.min.js.map'
+          }
         ]
       }
     },
@@ -76,7 +88,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks("grunt-contrib-uglify");
   grunt.loadNpmTasks("grunt-contrib-watch");
   grunt.loadNpmTasks("grunt-contrib-cssmin");
-  grunt.loadNpmTasks("grunt-karma");
+/*  grunt.loadNpmTasks("grunt-karma");*/
 
   // Default task(s).
   grunt.registerTask('default', ['sass','cssmin','concat', 'uglify', 'watch']);

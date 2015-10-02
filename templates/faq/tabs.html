@@ -1,0 +1,5 @@
+<ang-accordion one-at-a-time="true" close-icon-url="/images/right-icon.png" open-icon-url="/images/down-icon.png">
+    <collapsible-item item-title={{item.question}} ng-repeat="item in faq.faqListType(faq.tab)">
+        <div>{{item.answer}}</div>
+    </collapsible-item>
+</ang-accordion>

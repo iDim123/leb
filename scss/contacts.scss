@@ -1,3 +1,46 @@
-#contacts{
+#contacts {
   position: relative;
+  h2{
+    margin: 10px 0 10px 0;
+  }
+  .contacts__container {
+    padding-top: 45px;
+    .map{
+      display: inline-block;
+      width: 700px;
+      height: 560px;
+      img{
+        border-radius: 5px;
+      }
+    }
+    .contact-info{
+      display: inline-block;
+      vertical-align: top;
+      width: 400px;
+      padding: 0px 15px;
+      margin-left: 20px;
+      color: #505151;
+      background-color: #c3def7;
+      border-radius: 5px;
+      .work{
+        margin-left: 7px;
+      }
+      .work, .phones{
+        display: inline-block;
+        width: 47%;
+        :first-child{
+          font-weight: bold;
+          display: block;
+          margin-bottom: 7px;
+        }
+      }
+      .support{
+        display: inline-block;
+        width: 100%;
+        :nth-child(2){
+          display: block;
+        }
+      }
+    }
+  }
 }

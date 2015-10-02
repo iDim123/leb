@@ -1,21 +1,21 @@
-footer{
+footer {
   position: absolute;
   bottom: 0;
   height: 85px;
   width: 100%;
   background-color: #a2a2a2;
   border-radius: 20px 20px 0 0;
-  #footer{
+  #footer {
     position: relative;
   }
-  .telefons{
+  .telefons {
     float: left;
     color: #fff;
     font-size: 16px;
     margin: 6px 0 0 114px;
     line-height: 23px;
   }
-   .logo {
+  .logo {
     float: left;
     width: 100px;
     height: 100%;
@@ -28,19 +28,19 @@ footer{
       @include logo-sm;
     }
   }
-  hr{
+  hr {
     clear: both;
     margin: 0;
   }
-  .company-adress{
+  .company-adress {
     color: #fff;
     font-size: 14px;
-    margin: 8px 0 0 21px; 
+    margin: 8px 0 0 21px;
   }
-  .right-side{
+  .right-side {
     float: right;
     margin: 17px 10px 0 0;
-  lable{
+    span {
       color: #fff;
       height: 30px;
       font-weight: 600;

@@ -3,7 +3,6 @@ app.directive('tariffs', function () {
     restrict: 'EA',
     templateUrl: 'templates/tariffs/tabs.html',
     link: function (scope, element, attrs) {
-      console.log(scope);
     }
   }
 })

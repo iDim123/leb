@@ -1,36 +1,45 @@
 <section id="home-page" class="page">
-  <div class="slider__container">
-    <img src="/images/main-page/slider.jpg" alt="slider">
+  <div ng-controller="CarouselDemoCtrl">
+    <div class="slider__container">
+      <carousel interval="myInterval" no-wrap="noWrapSlides">
+        <slide ng-repeat="slide in slides" active="slide.active">
+          <a href="#/promo"><img ng-src="{{slide.image}}" style="margin:auto;"></a>
+          <div class="carousel-caption">
+            <p>{{slide.text}}</p>
+          </div>
+        </slide>
+      </carousel>
+    </div>
   </div>
   <div class="news__container">
     <div class="header">
       <h1>Новости</h1>
     </div>
     <div class="col-cell-lg">
-      <div class="img__container"><img src="/images/main-page/news-img-1.png" alt=""></div>
-      <p class="news-header">«Да здравствует осень»</p>
-      <p class="news-date">20.12.2015</p>
+      <div class="img__container"><img src="/images/main-page/news-img-1.png" alt="news-img-1"></div>
+      <p class="news-header">«Привет зима»</p>
+      <p class="news-date">10.11.2015</p>
       <div class="news-body">
-        Уважаемые абоненты! <br>
-        С 01 ноября 2012 года вступают в силу новые тарифные планы. Сущ
+        Уважаемые абоненты!
+        <br> С 01 декабря 2015 года вступают в силу новые тарифные планы. Существующие пользователи тарифного плана "Неограниченный" будут автоматически переведены на новые тарифы.
       </div>
     </div>
     <div class="col-cell-lg">
-      <div class="img__container"><img src="/images/main-page/news-img-1.png" alt=""></div>
-      <p class="news-header">«Да здравствует осень»</p>
-      <p class="news-date">20.12.2015</p>
+      <div class="img__container"><img src="/images/main-page/news-img-2.png" alt="news-img-2"></div>
+      <p class="news-header">«Лето на полгода»</p>
+      <p class="news-date">01.06.2015</p>
       <div class="news-body">
-        Уважаемые абоненты! <br>
-        С 01 ноября 2012 года вступают в силу новые тарифные планы. Сущ
+        Уважаемые абоненты!
+        <br> Лето это пора тепла, отдыха, пляжей и скидок. Всегда радостно когда лето начинается и грустно когда оно заканчивается. Для того, чтобы оставить часть лета в Ваших сердцах, «НАШНЕТ» запускает акцию «Лето на полгода».
       </div>
     </div>
     <div class="col-cell-lg">
-      <div class="img__container"><img src="/images/main-page/news-img-1.png" alt=""></div>
+      <div class="img__container"><img src="/images/main-page/news-img-3.png" alt="news-img-3"></div>
       <p class="news-header">«Да здравствует осень»</p>
       <p class="news-date">20.12.2015</p>
       <div class="news-body">
-    Уважаемые абоненты! <br>
-        С 01 ноября 2012 года вступают в силу новые тарифные планы. Сущ
+        Уважаемые абоненты!
+        <br> С 01 ноября 2015 года вступают в силу новые тарифные планы. Существующие пользователи тарифного плана "Неограниченный" будут автоматически переведены на новые тарифы.
       </div>
     </div>
   </div>
@@ -44,28 +53,7 @@
     <div class="header">
       <h1>Способ оплаты</h1>
     </div>
-    <ul>
-      <li>
-        <a href=""></a>
-      </li>
-      <li>
-        <a href=""></a>
-      </li>
-      <li>
-        <a href=""></a>
-      </li>
-      <li>
-        <a href=""></a>
-      </li>
-      <li>
-        <a href=""></a>
-      </li>
-      <li>
-        <a href=""></a>
-      </li>
-      <li>
-        <a href=""></a>
-      </li>
-    </ul>
+    <div class="sales">
+      <img src="/images/main-page/oplata.png" alt="oplata.png"></div>
   </div>
 </section>

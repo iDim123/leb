@@ -1,217 +1,245 @@
 [
-    {
-        "Home": [
-            {
-                "Name": "Минимальный",
-                "SpeedUa": 100,
-                "SpeedWorld": 20,
-                "SpeedWorldNigth": 100,
-                "MonthCost": 65,
-                "ConnectCost": 0.99,
-                "ConnectCostType": "коп."
+  {
+    "Home": [
+      {
+        "TariffID": 1,
+        "Name": "Минимальный",
+        "SpeedUa": 100,
+        "SpeedWorld": 20,
+        "SpeedWorldNigth": 100,
+        "MonthCost": 65,
+        "ConnectCost": 0.99,
+        "ConnectCostType": "коп."
             },
-            {
-                "Name": "Стандарт",
-                "SpeedUa": 100,
-                "SpeedWorld": 60,
-                "SpeedWorldNigth": 100,
-                "MonthCost": 85,
-                "ConnectCost": 0.99,
-                "ConnectCostType": "коп."
+      {
+        "TariffID": 2,
+        "Name": "Стандарт",
+        "SpeedUa": 100,
+        "SpeedWorld": 60,
+        "SpeedWorldNigth": 100,
+        "MonthCost": 85,
+        "ConnectCost": 0.99,
+        "ConnectCostType": "коп."
             },
-            {
-                "Name": "Продвинутый",
-                "SpeedUa": 100,
-                "SpeedWorld": 100,
-                "SpeedWorldNigth": 250,
-                "MonthCost": 115,
-                "ConnectCost": 0.99,
-                "ConnectCostType": "коп."
+      {
+        "TariffID": 3,
+        "Name": "Продвинутый",
+        "SpeedUa": 100,
+        "SpeedWorld": 100,
+        "SpeedWorldNigth": 250,
+        "MonthCost": 115,
+        "ConnectCost": 0.99,
+        "ConnectCostType": "коп."
             },
-            {
-                "Name": "Максимальный",
-                "SpeedUa": 1000,
-                "SpeedWorld": 500,
-                "SpeedWorldNigth": 500,
-                "MonthCost": 250,
-                "ConnectCost": 0.99,
-                "ConnectCostType": "коп."
+      {
+        "TariffID": 4,
+        "Name": "Максимальный",
+        "SpeedUa": 1000,
+        "SpeedWorld": 500,
+        "SpeedWorldNigth": 500,
+        "MonthCost": 250,
+        "ConnectCost": 0.99,
+        "ConnectCostType": "коп."
             }
         ]
     },
-    {
-        "Country": [
-            {
-                "Name": "E-1",
-                "SpeedUa": 100,
-                "SpeedWorld": 20,
-                "SpeedWorldNigth": 100,
-                "MonthCost": 65,
-                "ConnectCost": 0.99,
-                "ConnectCostType": "грн.*"
+  {
+    "Country": [
+      {
+        "TariffID": 5,
+        "Name": "E-1",
+        "SpeedUa": 100,
+        "SpeedWorld": 20,
+        "SpeedWorldNigth": 100,
+        "MonthCost": 65,
+        "ConnectCost": 0.99,
+        "ConnectCostType": "грн.*"
             },
-            {
-                "Name": "E-2",
-                "SpeedUa": 100,
-                "SpeedWorld": 60,
-                "SpeedWorldNigth": 100,
-                "MonthCost": 85,
-                "ConnectCost": 0.99,
-                "ConnectCostType": "грн.*"
+      {
+        "TariffID": 6,
+        "Name": "E-2",
+        "SpeedUa": 100,
+        "SpeedWorld": 60,
+        "SpeedWorldNigth": 100,
+        "MonthCost": 85,
+        "ConnectCost": 0.99,
+        "ConnectCostType": "грн.*"
             },
-            {
-                "Name": "E-3",
-                "SpeedUa": 100,
-                "SpeedWorld": 100,
-                "SpeedWorldNigth": 250,
-                "MonthCost": 115,
-                "ConnectCost": 1000,
-                "ConnectCostType": "грн.*"
+      {
+        "TariffID": 7,
+        "Name": "E-3",
+        "SpeedUa": 100,
+        "SpeedWorld": 100,
+        "SpeedWorldNigth": 250,
+        "MonthCost": 115,
+        "ConnectCost": 1000,
+        "ConnectCostType": "грн.*"
             },
-            {
-                "Name": "E-Max",
-                "SpeedUa": 1000,
-                "SpeedWorld": 500,
-                "SpeedWorldNigth": 500,
-                "MonthCost": 250,
-                "ConnectCost": 1000,
-                "ConnectCostType": "грн.*"
+      {
+        "TariffID": 8,
+        "Name": "E-Max",
+        "SpeedUa": 1000,
+        "SpeedWorld": 500,
+        "SpeedWorldNigth": 500,
+        "MonthCost": 250,
+        "ConnectCost": 1000,
+        "ConnectCostType": "грн.*"
             }
         ]
     },
-    {
-        "Bussines": [
-            {
-                "Name": "B-1",
-                "SpeedUa": 100,
-                "SpeedWorld": 20,
-                "SpeedWorldNigth": 100,
-                "MonthCost": 350,
-                "ConnectCost": "",
-                "ConnectCostType": "Уточнять"
+  {
+    "Bussines": [
+      {
+        "TariffID": 9,
+        "Name": "B-1",
+        "SpeedUa": 100,
+        "SpeedWorld": 20,
+        "SpeedWorldNigth": 100,
+        "MonthCost": 350,
+        "ConnectCost": "",
+        "ConnectCostType": "Уточнять"
             },
-            {
-                "Name": "B-2",
-                "SpeedUa": 100,
-                "SpeedWorld": 60,
-                "SpeedWorldNigth": 100,
-                "MonthCost": 1000,
-                "ConnectCost": "",
-                "ConnectCostType": "Уточнять"
+      {
+        "TariffID": 10,
+        "Name": "B-2",
+        "SpeedUa": 100,
+        "SpeedWorld": 60,
+        "SpeedWorldNigth": 100,
+        "MonthCost": 1000,
+        "ConnectCost": "",
+        "ConnectCostType": "Уточнять"
             },
-            {
-                "Name": "B-3",
-                "SpeedUa": 100,
-                "SpeedWorld": 100,
-                "SpeedWorldNigth": 250,
-                "MonthCost": 115,
-                "ConnectCost": "",
-                "ConnectCostType": "Уточнять"
+      {
+        "TariffID": 11,
+        "Name": "B-3",
+        "SpeedUa": 100,
+        "SpeedWorld": 100,
+        "SpeedWorldNigth": 250,
+        "MonthCost": 115,
+        "ConnectCost": "",
+        "ConnectCostType": "Уточнять"
             },
-            {
-                "Name": "B-4",
-                "SpeedUa": 1000,
-                "SpeedWorld": 500,
-                "SpeedWorldNigth": 500,
-                "MonthCost": 250,
-                "ConnectCost": "",
-                "ConnectCostType": "Уточнять"
+      {
+        "TariffID": 12,
+        "Name": "B-4",
+        "SpeedUa": 1000,
+        "SpeedWorld": 500,
+        "SpeedWorldNigth": 500,
+        "MonthCost": 250,
+        "ConnectCost": "",
+        "ConnectCostType": "Уточнять"
             }
         ]
     },
-    {
-        "AdditionalServices": [
-            {
-                "Name": "SMS-уведомления о платежах и статусе услуги",
-                "Cost": "2 грн/ мес"
+  {
+    "AdditionalServices": [
+      {
+        "Name": "SMS-уведомления о платежах и статусе услуги",
+        "Cost": "2 грн/ мес"
             },
-            {
-                "Name": "Установка и настройка маршрутизатора",
-                "Cost": "100 грн."
+      {
+        "Name": "Установка и настройка маршрутизатора",
+        "Cost": "100 грн."
             },
-            {
-                "Name": "Подключение дополнительного ПК",
-                "Cost": "150 грн."
+      {
+        "Name": "Подключение дополнительного ПК",
+        "Cost": "150 грн."
             },
-            {
-                "Name": "Поддержка домена и веб-хостинг",
-                "Cost": "600 грн."
+      {
+        "Name": "Поддержка домена и веб-хостинг",
+        "Cost": "600 грн."
             },
-            {
-                "Name": "Поддержка домена",
-                "Cost": "200 грн."
+      {
+        "Name": "Поддержка домена",
+        "Cost": "200 грн."
             },
-            {
-                "Name": "Регистрация доменов",
-                "Cost": "120 грн."
+      {
+        "Name": "Регистрация доменов",
+        "Cost": "120 грн."
             },
-            {
-                "Name": "Телефонные консультации",
-                "Cost": "Бесплатно"
+      {
+        "Name": "Телефонные консультации",
+        "Cost": "Бесплатно"
             },
-            {
-                "Name": "Установка сетевой карты",
-                "Cost": "70 грн."
+      {
+        "Name": "Установка сетевой карты",
+        "Cost": "70 грн."
             },
-            {
-                "Name": "Установка соединительной муфты",
-                "Cost": "10 грн."
+      {
+        "Name": "Установка соединительной муфты",
+        "Cost": "10 грн."
             },
-            {
-                "Name": "Вызов специалиста",
-                "Cost": "50 грн."
+      {
+        "Name": "Вызов специалиста",
+        "Cost": "50 грн."
             },
-            {
-                "Name": "Первый час работы специалиста",
-                "Cost": "90 грн."
+      {
+        "Name": "Первый час работы специалиста",
+        "Cost": "90 грн."
             },
-            {
-                "Name": "Каждый следующий час работы специалиста",
-                "Cost": "70 грн."
+      {
+        "Name": "Каждый следующий час работы специалиста",
+        "Cost": "70 грн."
             },
-            {
-                "Name": "Предоставление глобального IP адреса",
-                "Cost": "30 грн/мес"
+      {
+        "Name": "Предоставление глобального IP адреса",
+        "Cost": "30 грн/мес"
             },
-            {
-                "Name": "Настройка и консультации по другому ПО",
-                "Cost": "200 грн."
+      {
+        "Name": "Настройка и консультации по другому ПО",
+        "Cost": "200 грн."
             },
-            {
-                "Name": "Настройка роутера",
-                "Cost": "100 грн."
+      {
+        "Name": "Настройка роутера",
+        "Cost": "100 грн."
             },
-            {
-                "Name": "Ремонт поврежденного кабеля",
-                "Cost": "100 грн."
+      {
+        "Name": "Ремонт поврежденного кабеля",
+        "Cost": "100 грн."
             },
-            {
-                "Name": "Замена коннектора в помещении у абонента",
-                "Cost": "50 грн."
+      {
+        "Name": "Замена коннектора в помещении у абонента",
+        "Cost": "50 грн."
             },
-            {
-                "Name": "Установка и настройка медиаплеера",
-                "Cost": "200 грн."
+      {
+        "Name": "Установка и настройка медиаплеера",
+        "Cost": "200 грн."
             },
-            {
-                "Name": "Комплексная защита персонального компьютера",
-                "Cost": "150 грн."
+      {
+        "Name": "Комплексная защита персонального компьютера",
+        "Cost": "150 грн."
             },
-            {
-                "Name": "Установка дополнительного программного обеспечения",
-                "Cost": "40 грн."
+      {
+        "Name": "Установка дополнительного программного обеспечения",
+        "Cost": "40 грн."
             },
-            {
-                "Name": "Установка операционной системы",
-                "Cost": "240 грн."
+      {
+        "Name": "Установка операционной системы",
+        "Cost": "240 грн."
             }
         ]
     },
-    {
-        "LoialProgram": [
-            {
-                "Name": "",
-                "Cost": ""
+  {
+    "LoialProgram": [
+      {
+        "Name": "1 год",
+        "SpeedUa": 10,
+        "SpeedWorld": 5
+            },
+      {
+        "Name": "2 года",
+        "SpeedUa": 15,
+        "SpeedWorld": 15
+            },
+      {
+        "Name": "3 года",
+        "SpeedUa": 25,
+        "SpeedWorld": 20
+            },
+      {
+        "Name": "4 года",
+        "SpeedUa": 50,
+        "SpeedWorld": 40
             }
         ]
     }

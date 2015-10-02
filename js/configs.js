@@ -9,14 +9,17 @@ app.config(['$routeProvider', function ($routeProvider) {
     .when('/tariffs', {
       templateUrl: 'templates/tariffs/tariffs.html',
     })
-    .when('/service', {
-      templateUrl: 'templates/service.html',
+    .when('/area', {
+      templateUrl: 'templates/area.html',
+    })
+    .when('/faq', {
+      templateUrl: 'templates/faq/faq.html',
     })
     .when('/contacts', {
       templateUrl: 'templates/contacts.html',
     })
-    .when('/faq', {
-      templateUrl: 'templates/faq.html',
+    .when('/about', {
+      templateUrl: 'templates/about.html',
     })
     .otherwise({
       redirectTo: '/',

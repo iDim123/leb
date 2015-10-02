@@ -1,43 +1,56 @@
-  <div class="tariffs__container">
-    <div ng-show="tc.isSelected(0) || tc.isSelected(1) || tc.isSelected(2)">
-      <div class="tariff" ng-repeat="tariff in tc.tariffsType(tc.tab)">
-        <div class="prices">
-          <lable>{{tariff.Name}}</lable>
-          <lable>до <span>{{tariff.SpeedUa}}</span> Мбит/с</lable>
-          <lable>до <span>{{tariff.SpeedWorld}}</span> Мбит/с</lable>
-          <lable>до <span>{{tariff.SpeedWorldNigth}}</span> Мбит/с</lable>
-          <lable><span>{{tariff.MonthCost}}</span> грн.*</lable>
-          <lable><span>{{tariff.ConnectCost}}</span> {{tariff.ConnectCostType}}</lable>
-        </div>
-        <lable class="arrow-img"></lable>
-        <button>Подключиться</button>
+<div class="tariffs__container">
+  <div ng-show="tc.isSelected(0) || tc.isSelected(1) || tc.isSelected(2)">
+    <div class="tariff" ng-repeat="tariff in tc.tariffsType(tc.tab)">
+      <div class="prices" ng-style="{'background-position': tc.getSpriteStyle($index)}">
+        <lable>{{tariff.Name}}</lable>
+        <lable>до <span>{{tariff.SpeedUa}}</span> Мбит/с</lable>
+        <lable>до <span>{{tariff.SpeedWorld}}</span> Мбит/с</lable>
+        <lable>до <span>{{tariff.SpeedWorldNigth}}</span> Мбит/с</lable>
+        <lable><span>{{tariff.MonthCost}}</span> грн.*</lable>
+        <lable><span>{{tariff.ConnectCost}}</span> {{tariff.ConnectCostType}}</lable>
       </div>
-      <div class="tariff-info__container">
-        <lable>Скорость по украинскому сегменту</lable>
-        <lable>Скорость по зарубежному сегменту </lable>
-        <lable>Скорость по зарубежному сегменту в ночное время (с 1:00 до 8:00)</lable>
-        <lable>Ежемесячная абонентская плата (с НДС)</lable>
-        <lable>Стоимость подключения (с НДС)</lable>
-      </div>
+      <div class="arrow-img"></div>
+      <a href="{{tariff.TariffID}}" class="button">Подключиться</a>
     </div>
-    <div ng-show="tc.isSelected(3)">
-      <div class="services__main-container">
-        <div class="services__container">
-          <div class="service_name">
-            <lable ng-repeat="service in tc.res.first[0]">{{service.Name}}</lable>
-          </div>
-          <div class="service_cost">
-            <lable ng-repeat="service in tc.res.first[0]">{{service.Cost}}</lable>
-          </div>
+    <div class="tariff-info__container">
+      <span>Скорость по украинскому сегменту</span>
+      <span>Скорость по зарубежному сегменту </span>
+      <span>Скорость по зарубежному сегменту в ночное время (с 1:00 до 8:00)</span>
+      <span>Ежемесячная абонентская плата (с НДС)</span>
+      <span>Стоимость подключения (с НДС)</span>
+    </div>
+  </div>
+  <div ng-show="tc.isSelected(3)">
+    <div class="services__main-container">
+      <div class="services__container">
+        <div class="service_name">
+          <span ng-repeat="service in tc.res.first[0]">{{service.Name}}</span>
         </div>
-        <div class="services__container">
-          <div class="service_name">
-            <lable ng-repeat="service in tc.res.second[0]">{{service.Name}}</lable>
-          </div>
-          <div class="service_cost">
-            <lable ng-repeat="service in tc.res.second[0]">{{service.Cost}}</lable>
-          </div>
+        <div class="service_cost">
+          <span ng-repeat="service in tc.res.first[0]">{{service.Cost}}</span>
+        </div>
+      </div>
+      <div class="services__container">
+        <div class="service_name">
+          <span ng-repeat="service in tc.res.second[0]">{{service.Name}}</span>
+        </div>
+        <div class="service_cost">
+          <span ng-repeat="service in tc.res.second[0]">{{service.Cost}}</span>
         </div>
       </div>
     </div>
   </div>
+  <div ng-show="tc.isSelected(4)">
+    <div class="loyalty-program" ng-repeat="tariff in tc.tariffsType(tc.tab)">
+      <div class="prices loyalty">
+        <lable>{{tariff.Name}}</lable>
+        <lable>до <span>{{tariff.SpeedUa}}</span> Мбит/с</lable>
+        <lable>до <span>{{tariff.SpeedWorld}}</span> Мбит/с</lable>
+      </div>
+    </div>
+      <div class="tariff-info__container loyalty">
+        <span>Скорость по украинскому сегменту</span>
+        <span>Скорость по зарубежному сегменту </span>
+      </div>
+  </div>
+</div>

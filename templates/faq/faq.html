@@ -1,0 +1,13 @@
+<section id="faq" ng-controller="faqCtrl as faq">
+  <div class="tab-arrow faq-arrow"></div>
+  <div class="faq__container">
+    <ul class="faq-tabs">
+      <li><span ng-class="{active_faq: faq.isSelected(0)}" ng-click="faq.selectTab(0)">Общие</span></li>
+      <li><span ng-class="{active_faq: faq.isSelected(1)}" ng-click="faq.selectTab(1)">Безопасность</span></li>
+      <li><span ng-class="{active_faq: faq.isSelected(2)}" ng-click="faq.selectTab(2)">Управление услугами</span></li>
+      <li><span ng-class="{active_faq: faq.isSelected(3)}" ng-click="faq.selectTab(3)">Финансовые вопросы</span></li>
+      <li><span ng-class="{active_faq: faq.isSelected(4)}" ng-click="faq.selectTab(4)">Другие</span></li>
+    </ul>
+    <question-ansver></question-ansver>
+  </div>
+</section>

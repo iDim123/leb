@@ -2,19 +2,18 @@ app.controller("tariffsCtrl", ["$scope", "tariffsFactory", function ($scope, tar
   /*  $scope.tariffs = [];*/
   tariffsFactory.getTariffs().then(function (data) {
     $scope.tariffs = data;
-    console.log('Tariffs load success.');
   }, function (data) {
-    console.log('Tariffs load failed.')
   });
 
   tariffsFactory.getTariffsDescriptions().then(function (data) {
     $scope.tariffsDescr = data;
-    console.log('TariffsD load success.');
   }, function (data) {
-    console.log('TariffsD load failed.')
   });
 
 
+  this.getSpriteStyle = function(id){
+    return (id * 180) + 'px' + ' 0';
+  }
 
   this.tab = 0;
   this.selectTab = function (setTab) {
@@ -42,6 +41,8 @@ app.controller("tariffsCtrl", ["$scope", "tariffsFactory", function ($scope, tar
           this.res.first.push($scope.tariffs[tariffName].AdditionalServices.slice(0, (tmp)));
           this.res.second.push($scope.tariffs[tariffName].AdditionalServices.slice(tmp));
           break;
+        case 4:
+        return $scope.tariffs[tariffName].LoialProgram;
       }
     }
   }
